@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9F1B6D701AD976B300B1A09E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1B6D6F1AD976B300B1A09E /* AppDelegate.swift */; };
-		9F1B6D721AD976B300B1A09E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1B6D711AD976B300B1A09E /* ViewController.swift */; };
 		9F1B6D751AD976B300B1A09E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1B6D731AD976B300B1A09E /* Main.storyboard */; };
 		9F1B6D771AD976B300B1A09E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1B6D761AD976B300B1A09E /* Images.xcassets */; };
 		9F1B6D7A1AD976B300B1A09E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1B6D781AD976B300B1A09E /* LaunchScreen.xib */; };
@@ -29,7 +28,6 @@
 		9F1B6D6A1AD976B300B1A09E /* Happiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1B6D6E1AD976B300B1A09E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F1B6D6F1AD976B300B1A09E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F1B6D711AD976B300B1A09E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F1B6D741AD976B300B1A09E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F1B6D761AD976B300B1A09E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9F1B6D791AD976B300B1A09E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -77,11 +75,7 @@
 		9F1B6D6C1AD976B300B1A09E /* Happiness */ = {
 			isa = PBXGroup;
 			children = (
-				9F1B6D6F1AD976B300B1A09E /* AppDelegate.swift */,
-				9F1B6D711AD976B300B1A09E /* ViewController.swift */,
 				9F1B6D731AD976B300B1A09E /* Main.storyboard */,
-				9F1B6D761AD976B300B1A09E /* Images.xcassets */,
-				9F1B6D781AD976B300B1A09E /* LaunchScreen.xib */,
 				9F1B6D6D1AD976B300B1A09E /* Supporting Files */,
 			);
 			path = Happiness;
@@ -90,6 +84,9 @@
 		9F1B6D6D1AD976B300B1A09E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9F1B6D761AD976B300B1A09E /* Images.xcassets */,
+				9F1B6D781AD976B300B1A09E /* LaunchScreen.xib */,
+				9F1B6D6F1AD976B300B1A09E /* AppDelegate.swift */,
 				9F1B6D6E1AD976B300B1A09E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,7 +209,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F1B6D721AD976B300B1A09E /* ViewController.swift in Sources */,
 				9F1B6D701AD976B300B1A09E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
