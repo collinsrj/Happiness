@@ -12,6 +12,7 @@ protocol FaceViewDataSource: class {
     func smilinessForFaceView(sender: FaceView) -> Double?
 }
 
+
 @IBDesignable
 class FaceView: UIView {
     @IBInspectable
@@ -32,11 +33,24 @@ class FaceView: UIView {
             setNeedsDisplay()
         }
     }
+    
+    override var accessibilityValue: String! {
+        get {return "Very happy"}
+        set {}
+    }
+    
     var faceCenter: CGPoint {
         return convertPoint(center, fromView: superview)
     }
     var faceRadius: CGFloat {
         return min(bounds.width, bounds.height)/2 * scale
+    }
+    
+    func scale(gesture: UIPinchGestureRecognizer) {
+        if gesture.state == .Changed {
+            scale = scale * gesture.scale
+            gesture.scale = 1
+        }
     }
     
     weak var dataSource: FaceViewDataSource?
