@@ -35,8 +35,18 @@ class FaceView: UIView {
     }
     
     override var accessibilityValue: String! {
-        get {return "Very happy"}
-        set {}
+        get {
+            if (scale < 0.3) {
+                return "Very small"
+            } else if (scale < 0.7) {
+                return "Normal"
+            } else {
+                return "Large"
+            }
+        }
+        set {
+            // do nothing
+        }
     }
     
     var faceCenter: CGPoint {
