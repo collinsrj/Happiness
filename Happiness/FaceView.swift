@@ -65,8 +65,6 @@ class FaceView: UIView {
     
     weak var dataSource: FaceViewDataSource?
     
-    asdfadfads
-    
     private struct Scaling {
         static let FaceRadiusToEyeRadiusRatio: CGFloat = 10
         static let FaceRadiusToEyeOffsetRatio: CGFloat = 3
